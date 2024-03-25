@@ -13,10 +13,9 @@ jobs:
           run: ls -lta 
         
         - name : Executing Shell scripts
-          run: |
-            cd .github/workflows        
+          run: |   
             chmod +x shellscript.sh
-            ./shellscript.sh
+            ./.github/workflows/shellscript.sh
 
         # - name: List files
         #   run: ls
