@@ -8,12 +8,14 @@ jobs:
         steps:
         - name : Checkout Repo
           uses: actions/checkout@v4
-          
+
         - name: List files
           run: ls -lta 
         
         - name : Executing Shell scripts
-          run: ./shellscript.sh
+          run: |
+            chmod +x shellscript.sh
+            ./shellscript.sh
 
         # - name: List files
         #   run: ls
