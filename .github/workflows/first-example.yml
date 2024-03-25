@@ -14,8 +14,8 @@ jobs:
         
         - name : Executing Shell scripts
           run: |   
-            chmod +x .github/workflows/shellscript.sh
-            ./.github/workflows/shellscript.sh
+            chmod +x shellscript.sh
+            ./shellscript.sh
 
         # - name: List files
         #   run: ls
